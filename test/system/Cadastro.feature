@@ -101,10 +101,15 @@ Senha atualizada
 Redireciona para a página de Login
 
 Sad path 1:
-Usuário confirma o email
-Não recebe email com o link 
+Usuário digita o email
+Email não está cadastrado no banco de dados
 
 Sad path 2:
+Usuário digita o email
+Email existe no banco de dados
+Sistema nao envia o email com o link
+
+Sad path 3:
 Usuário recebe o email
 Altera a senha
 Confirma alteração
