@@ -86,7 +86,7 @@ Funcionalidade: Resetar Senha
 Cenario: Usuario cadastrado
 Dado que sou um usuario
 E eu possuo uma conta,
-E estou logado,
+E não estou logado,
 Então eu devo ser capaz de resetar a minha senha
 
 Base path:
