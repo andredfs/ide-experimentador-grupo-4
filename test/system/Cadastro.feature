@@ -37,7 +37,7 @@ E eu possuo uma conta,
 E estou logado,
 Então eu devo ser capaz de excluir minha conta
 
-Base Path:
+Base path:
 Usuário clica no botão de excluir conta
 Campo de confirmação do email para excluir a conta
 
@@ -65,6 +65,20 @@ E eu possuo uma conta,
 E estou logado,
 Então eu devo ser capaz de editar o meu cadastro
 
+Base path:
+Usuário clica no botão de editar cadastro
+Campos de edição de diferentes dados
+
+Happy path:
+Usuário digita dado atualizado
+Clica no botão confirma
+Campo é atualizado
+
+Sad path:
+Usuário digita dado novo
+Clica no botão confirma
+Campo não é atualizado
+
 
 Funcionalidade: Resetar Senha
 
@@ -74,4 +88,25 @@ Dado que sou um usuario
 E eu possuo uma conta,
 E estou logado,
 Então eu devo ser capaz de resetar a minha senha
+
+Base path:
+Usuário clica no botão de resetar senha
+Campo de confirmação de email 
+
+Happy path:
+Usuário confirma o email
+Recebe no email o link de resert
+Insere nova senha
+Senha atualizada
+Redireciona para a página de Login
+
+Sad path 1:
+Usuário confirma o email
+Não recebe email com o link 
+
+Sad path 2:
+Usuário recebe o email
+Altera a senha
+Confirma alteração
+Senha não alterada no banco de dados
 
