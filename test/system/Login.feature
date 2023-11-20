@@ -35,14 +35,14 @@ E eu possuo uma conta cadastrada,
 E eu estou logado,
 Então eu devo ser capaz de fazer logout
 
-Base Path:
+Base path:
 Usuário clica no botão de logout
 
-Happy Path:
+Happy path:
 Servidor desloga o usuário
 Usuário é redirecionado para página de login
 
-Sad Path:
+Sad path:
 Servidor retorna erro ao tentar deslogar o usuário
 Erro é informado ao usuário na aplicação
 
@@ -55,3 +55,18 @@ Dado que sou um usuario
 E eu nao estou logado,
 E eu tento acessar uma pagina restrita,
 Então eu devo ser redirecionado para a pagina de login
+
+Base path:
+Usuário não logado
+Tenta acessar página restrita
+
+Happy path:
+Usuário recebe mensagem de erro 
+Redireciona para página de login
+
+Sad path 1:
+Usuário consegue acessar página mesmo sem logar
+
+Sad path 2:
+Usuário não consegue logar
+Não é redirecionado para o login
