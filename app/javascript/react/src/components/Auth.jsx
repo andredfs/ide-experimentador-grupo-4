@@ -1,7 +1,6 @@
 import React from 'react';
 import SignInButton from './SignInButton'; // Update with the correct path to your SignInButton component
-
-import SignInButton from './SignInButton'; // Import your SignInButton component
+import '/home/andredfs/ide-experimentador-grupo-4/app/assets/stylesheets/application.css';
 
 const YourPageWithSignIn = () => {
   return (
